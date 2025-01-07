@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container text-center py-5">
+    <!-- App Title -->
+    <h1 class="mb-4">Онлайн Калькулятор</h1>
+
+    <!-- Subtitle -->
+    <p class="text-muted mb-4">Выберите что вы хотите сделать:</p>
+
+    <!-- Action Buttons -->
+    <div class="d-flex justify-content-center mb-4">
+        <a th:href="@{/upload}" class="btn btn-primary me-3">Посчитать файл</a>
+        <a th:href="@{/uresult}" class="btn btn-primary me-3">Ввести вручную</a>
+    </div>
+
+    <!-- Application Features -->
+    <div class="card shadow-sm p-4">
+        <h5 class="card-title mb-3">Возможности онлайн калькулятора</h5>
+        <p class="text-muted">
+            Нажимая кнопку <b>"Посчитать файл"</b>, вы можете загружать файлы форматов text, xml, json и yaml с математическими выражениями.
+            После этого выполняется расчет, и результат отображается на экране.
+        </p>
+        <p class="text-muted">
+            Кнопка <b>"Ввести вручную"</b> позволяет вам вводить математические выражения самостоятельно. После ввода нажмите <b>"Посчитать"</b>,
+            и результат будет показан на экране, а также добавлен в историю операций.
+
+        </p>
+        <p class="text-muted">
+            <b>Поддерживаемые операции:</b> +, -, /, *, ^, %
+        </p>
+
+        <p class="text-muted">
+            <b>Поддерживаемые функции:</b>
+            abs, acos, asin, atan, cbrt, ceil, cos, cosh, exp, floor, log, log10, log2, sin, sinh, sqrt, tan, tanh, signum.
+        </p>
+
+        <p class="text-muted">
+            После отображения результата, в любом их двух указанных случаев, вы можете воспользоваться кнопкой <b>"Скачать файл"</b>.
+            Это перенаправит вас на страницу, где можно выбрать тип файла с результатами и указать его название.
+        </p>
+
+
+    </div>
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
