@@ -2,8 +2,8 @@ package com.example.bsujavaexam.service;
 
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
-import org.example.bsujavafinalproject.configuration.MessageConfiguration;
-import org.example.bsujavafinalproject.entity.Issue;
+import com.example.bsujavaexam.configuration.MessageConfiguration;
+import com.example.bsujavaexam.entity.Issue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

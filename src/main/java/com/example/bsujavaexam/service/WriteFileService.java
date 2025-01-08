@@ -1,9 +1,9 @@
 package com.example.bsujavaexam.service;
 
+import com.example.bsujavaexam.entity.Issue;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
-import org.example.bsujavafinalproject.entity.Issue;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
