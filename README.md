@@ -7,7 +7,7 @@
 ![главная страница](https://github.com/Kuznetsova-Sofiya/BSUJavaExam/blob/master/Pictures%20for%20Readme%20file/home.png)
 
 Выбирая на главной странице кнопку "Посчитать файл", пользователь переходит на страницу загрузки файла с математическими выражениями.
-![выбор файла]()
+![выбор файла](https://github.com/Kuznetsova-Sofiya/BSUJavaExam/blob/master/Pictures%20for%20Readme%20file/upload-file.png)
 
 Выбрав файл и нажав кнопку "Рассчитать", пользователь попадает на страницу с результатами.
 ![результаты выражений в файле](https://github.com/Kuznetsova-Sofiya/BSUJavaExam/blob/master/Pictures%20for%20Readme%20file/fileCalk.png)
