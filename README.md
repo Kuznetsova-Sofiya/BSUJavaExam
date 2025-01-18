@@ -29,6 +29,28 @@
 * **.json**
 * **.yaml**
 
+### Представление математическое выражения в файлах
+
+В файлах формата **.txt** каждая строка воспринемается как отдельное математическое выражение 
+В файлах форматов **.xml .json .yaml** для коррекной работы математические выражения должны соответствовать следующему классу:
+```java
+public class Issue {
+    private String expression;
+    private double result;
+    private boolean correctCalculated;
+    private String errorMessage;
+}
+```
+
+** Для вычисления математических выражений используем библиотеку**
+```
+<dependency>
+    <groupId>net.objecthunter</groupId>
+    <artifactId>exp4j</artifactId>
+    <version>0.4.8</version>
+</dependency>
+```
+
 ### Математические операторы:
 - **Сложение**: 2 + 2  
 - **Вычитание**: 2 - 2  
@@ -59,18 +81,63 @@
 - **tanh**: гиперболический тангенс  
 - **signum**: сигнум-функция (знак числа)
 
-### Представление математическое выражения в файлах
+## Выводимые ошибки вычислений:
+### Possible Errors in `exp4j` Expression Evaluation
 
-В файлах формата **.txt** каждая строка воспринемается как отдельное математическое выражение 
-В файлах форматов **.xml .json .yaml** для коррекной работы математические выражения должны соответствовать следующему классу:
-```java
-public class Issue {
-    private String expression;
-    private double result;
-    private boolean correctCalculated;
-    private String errorMessage;
-}
-```
+#### 1. **ArithmeticException**
+   - **Description:** This error occurs during division by zero or other invalid arithmetic operations.
+   - **Russian:** Ошибка арифметики (например, деление на ноль или недопустимые операции).
+
+#### 2. **IllegalArgumentException**
+   - **Description:** Thrown when an invalid argument is passed, such as a null or malformed expression.
+   - **Russian:** Недопустимый аргумент (например, null или некорректное выражение).
+
+#### 3. **EmptyStackException**
+   - **Description:** This occurs when there is a syntax error causing an empty stack during evaluation (e.g., missing operators or operands).
+   - **Russian:** Ошибка пустого стека (например, отсутствие операторов или операндов).
+
+#### 4. **UnsupportedOperationException**
+   - **Description:** Thrown if the expression contains unsupported operations or functions.
+   - **Russian:** Операция не поддерживается (например, использование неподдерживаемых функций).
+
+#### 5. **NumberFormatException**
+   - **Description:** Happens when a numeric value in the expression is improperly formatted (e.g., multiple decimal points).
+   - **Russian:** Неправильный формат числа (например, несколько десятичных точек).
+
+#### 6. **IllegalStateException**
+   - **Description:** This error can occur if the expression evaluator is in an invalid state, such as being used after modification.
+   - **Russian:** Некорректное состояние (например, использование после изменения).
+
+#### 7. **ExpressionException**
+   - **Description:** A generic error related to invalid expressions, such as mismatched parentheses or undefined variables.
+   - **Russian:** Ошибка выражения (например, несогласованные скобки или неопределённые переменные).
+
+#### 8. **StackOverflowError**
+   - **Description:** Occurs if an expression has excessively deep recursion or nesting.
+   - **Russian:** Переполнение стека (например, слишком глубокая рекурсия или вложенность).
+
+#### 9. **UnknownFunctionOrVariableException**
+   - **Description:** Raised when an expression references a function or variable that is not defined in the evaluator.
+   - **Russian:** Неизвестная функция или переменная (например, использование неопределённых функций или переменных).
+
+#### 10. **MathException**
+   - **Description:** A mathematical error such as calculating the square root of a negative number or logarithm of a non-positive number.
+   - **Russian:** Математическая ошибка (например, вычисление квадратного корня из отрицательного числа).
+
+#### 11. **EvaluationException**
+   - **Description:** Thrown during the evaluation process when the expression cannot be computed due to logical or mathematical constraints.
+   - **Russian:** Ошибка вычисления (например, невозможность выполнения вычисления из-за ограничений).
+
+#### 12. **PrecisionLossException**
+   - **Description:** Indicates a loss of precision during computation due to limited floating-point accuracy.
+   - **Russian:** Потеря точности (например, из-за ограничений числовой точности).
+
+#### 13. **NullPointerException**
+   - **Description:** Happens if a null reference is used where an expression or value is required.
+   - **Russian:** Ошибка null-ссылки (например, использование null вместо выражения или значения).
+
+
+
 
 ## REST API
 
