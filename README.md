@@ -13,7 +13,7 @@
 ![результаты выражений в файле](https://github.com/Kuznetsova-Sofiya/BSUJavaExam/blob/master/Pictures%20for%20Readme%20file/fileCalk.png)
 
 Далее пользователь может вернуться на главную страницу или, нажав кнопку "Скачать файл", перейти на страницу скачивания файла.
-![страница скачивания файла]()
+![страница скачивания файла](https://github.com/Kuznetsova-Sofiya/BSUJavaExam/blob/master/Pictures%20for%20Readme%20file/downoad-file.png)
 
 При нажатии кнопки "Скачать файл", файл будет сохранен на компьютер пользователя с указанным форматом и именем.
 
