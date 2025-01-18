@@ -169,23 +169,62 @@ public class Issue {
   * по пути localhost:8080/swagger-ui.html
 
 ## Unit тесты
-** Написаны следующие тесты: **
-4) Для всех атомарных задач написаны Unit Test-ы
+**Написаны следующие тесты:**
+- Valid Expressions (Корректные выражения)
+  - Simple addition (Простое сложение)
+  - Simple subtraction (Простое вычитание)
+  - Simple multiplication (Простое умножение)
+  - Simple division (Простое деление)
+  - Expression with precedence (Выражение с приоритетами)
+  - Expression with parentheses (Выражение со скобками)
+  - Expression with decimals (Выражение с десятичными числами)
+  - Expression with negative numbers (Выражение с отрицательными числами)
+  - Expression with exponents (Выражение со степенями)
+  - Expression with functions (Выражение с функциями)
+  - Expression with multiple operators (Выражение с несколькими операторами)
+  - Expression with nested parentheses (Выражение с вложенными скобками)
+  - Expression with scientific notation (Выражение в научной нотации)
+
+- Invalid Expressions (Некорректные выражения)
+  - Division by zero (Деление на ноль)
+  - Malformed expression with double operators (Некорректное выражение с двойными операторами)
+  - Non-numeric characters in expression (Некорректное выражение с недопустимыми символами)
+  - Empty expression (Пустое выражение)
+  - Null expression (Выражение со значением null)
+  - Expression with multiple decimal points (Выражение с несколькими десятичными точками)
+  - Expression with mismatched parentheses (Выражение с несогласованными скобками)
+  - Expression with implicit multiplication (unsupported) (Выражение с неявным умножением — неподдерживается)
+  - Expression with unsupported function (Выражение с неподдерживаемой функцией)
+  - Expression with modulus operator (if unsupported) (Выражение с оператором остатка — если не поддерживается)
+
+- Edge Cases (Граничные случаи)
+  - Very long expression (Очень длинное выражение)
+  - Expression resulting in Infinity (Выражение, приводящее к бесконечности)
+  - Expression resulting in NaN (Выражение, приводящее к NaN)
+  - Expression with spaces (Выражение с пробелами)
+  - Expression with unary operators (Выражение с унарными операторами)
+  - Expression with multiple nested parentheses (Выражение с несколькими уровнями вложенности скобок)
+  - Expression with multiple functions (Выражение с несколькими функциями)
+  - Expression with division resulting in negative number (Выражение с делением, приводящим к отрицательному числу)
+  - Expression with exponential and functions (Выражение со степенями и функциями)
+  - Expression with multiple decimal operations (Выражение с несколькими десятичными операциями)
+
+- Special Cases (Особые случаи)
+  - Expression with pi constant (Выражение с константой pi)
+  - Expression with e constant (Выражение с константой e)
+  - Expression with multiple variables (unsupported) (Выражение с несколькими переменными — неподдерживается)
+  - Expression with implicit addition (Выражение с неявным сложением)
+  - Expression with mixed operators and functions (Выражение с смешанными операторами и функциями)
+  - Expression with chained functions (Выражение с вложенными функциями)
+  - Expression with factorial (unsupported) (Выражение с факториалом — неподдерживается)
+  - Expression with multiple decimal points in number (Выражение с несколькими десятичными точками в числе)
+  - Expression with whitespace and tabs (Выражение с пробелами и табуляцией)
+  - Expression with empty parentheses (Выражение с пустыми скобками)
 
 
+ 
 
-Необходимо реализовать консольное приложение, которое:
-1)  Читает данные из входного файла;
-2)  Обрабатывает полученную информацию;
-3)  Записывает данные в выходной файл;
- 
-Входной и выходной файл могут быть следующих форматов: plain text, xml, json, yaml Так же входные и выходные файлы могут быть архивированы и зашифрованы, разными engines (только архивирован, только зашифрован, сперва архивирован, а потом зашифрован и наоборот).
- 
-«Тип» входного и выходного файла задаются параметрами консоли.
-Приложение реализовать двумя способами: без использования Design Patterns и c использованием Design Patterns (Decorator и Builder … можно оформить Builder в виде Singleton-а), сравнить реализации.
- 
-Обработка информации на первом этапе: найти все арифметические операции во входном файле и заменить на результаты в выходном файле.
-Реализовать фильтрацию двумя способами без использования регулярных выражений и с использованием регулярных выражений (а так же третьим :) найти библиотеку, которая все делает за вас, парсинг и калькуляцию, такие есть и не одна). Провести сравнительный анализ 2-х и более вариантов реализации.
+___
  
 Следующие шаги по нашей задаче:
 1)  Добавить UI:
