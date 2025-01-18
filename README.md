@@ -79,11 +79,11 @@ public class Issue {
 * Для подсчета одиночного выражения используем путь: http://localhost:8080/api/solve/one
 с глаголом: POST
 И телом запроса:
-`
+```
 {
   "expression": "2 + 2 * 3"
 }
-`
+```
 
 
 
