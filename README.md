@@ -77,7 +77,7 @@ public class Issue {
 Реализован рест сервис со следующим API:
 
 * Для подсчета одиночного выражения используем:
-  * путь: http://localhost:8080/api/solve/one
+  * путь: localhost:8080/api/solve/one
   * с глаголом: POST
   * И телом запроса:
 ```
