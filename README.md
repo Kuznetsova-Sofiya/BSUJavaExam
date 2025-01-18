@@ -170,7 +170,7 @@ public class Issue {
 
 ## Unit тесты
 **Написаны следующие тесты:**
-- Valid Expressions (Корректные выражения)
+- **Valid Expressions** (Корректные выражения)
   - Simple addition (Простое сложение)
   - Simple subtraction (Простое вычитание)
   - Simple multiplication (Простое умножение)
@@ -185,7 +185,7 @@ public class Issue {
   - Expression with nested parentheses (Выражение с вложенными скобками)
   - Expression with scientific notation (Выражение в научной нотации)
 
-- Invalid Expressions (Некорректные выражения)
+- **Invalid Expressions** (Некорректные выражения)
   - Division by zero (Деление на ноль)
   - Malformed expression with double operators (Некорректное выражение с двойными операторами)
   - Non-numeric characters in expression (Некорректное выражение с недопустимыми символами)
@@ -197,7 +197,7 @@ public class Issue {
   - Expression with unsupported function (Выражение с неподдерживаемой функцией)
   - Expression with modulus operator (if unsupported) (Выражение с оператором остатка — если не поддерживается)
 
-- Edge Cases (Граничные случаи)
+- **Edge Cases** (Граничные случаи)
   - Very long expression (Очень длинное выражение)
   - Expression resulting in Infinity (Выражение, приводящее к бесконечности)
   - Expression resulting in NaN (Выражение, приводящее к NaN)
@@ -209,7 +209,7 @@ public class Issue {
   - Expression with exponential and functions (Выражение со степенями и функциями)
   - Expression with multiple decimal operations (Выражение с несколькими десятичными операциями)
 
-- Special Cases (Особые случаи)
+- **Special Cases** (Особые случаи)
   - Expression with pi constant (Выражение с константой pi)
   - Expression with e constant (Выражение с константой e)
   - Expression with multiple variables (unsupported) (Выражение с несколькими переменными — неподдерживается)
