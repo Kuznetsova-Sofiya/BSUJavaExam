@@ -64,15 +64,42 @@
 В файлах формата **.txt** каждая строка воспринемается как отдельное математическое выражение 
 В файлах форматов **.xml .json .yaml** для коррекной работы математические выражения должны соответствовать следующему классу:
 ```java
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, world!");
-    }
+public class Issue {
+    private String expression;
+    private double result;
+    private boolean correctCalculated;
+    private String errorMessage;
 }
 ```
+
 ## REST API
 
+Реализован рест сервис со следующим API:
 
+* Для подсчета одиночного выражения используем путь: http://localhost:8080/api/solve/one
+с глаголом: POST
+И телом запроса:
+...
+{
+  "expression": "2 + 2 * 3"
+}
+...
+
+
+
+http://localhost:8080/api/solve/much
+POST
+
+в raw
+[
+  { "expression": "2 + 2 * 3" },
+  { "expression": "(5 + 3) / 2" },
+  { "expression": "10 / 0" },
+  { "expression": "5!" }
+]
+
+
+http://localhost:8080/swagger-ui.html
 Ниже приведен процесс работы данного приложения. 
 0.5) Программа предусматривает следующие операции: +, -, *, /, sin(x), cos(x)
 1) Считывание арифмитические выражения с консоли или из файлов следующих форматов: text, xml, json, yaml. В файле каждая новая строка яавляется новым арифметичесмким выражением. Что-то про объекты наших арифметич операций
